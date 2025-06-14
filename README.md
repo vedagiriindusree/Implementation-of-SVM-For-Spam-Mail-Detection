@@ -30,9 +30,8 @@ Program to implement the SVM For Spam Mail Detection..
 Developed by: VEDAGIRI INDUSREE
 RegisterNumber: 212223230236
 */
-
 import pandas as pd
-data=pd.read_csv("spam.csv",encoding='windows-1252')
+data=pd.read_csv("spam (1).csv",encoding='windows-1252')
 
 
 data.head()
@@ -44,8 +43,8 @@ data.info()
 data.isnull().sum()
 
 
-x=data["v1"].values
-y=data["v2"].values
+x=data["v2"].values
+y=data["v1"].values
 
 
 from sklearn.model_selection import train_test_split
